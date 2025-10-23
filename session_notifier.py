@@ -3,7 +3,7 @@ import pytz
 import requests
 import schedule
 import time
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, UTC # Import UTC directly
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
@@ -64,7 +64,8 @@ def send_telegram_message(message):
 
 def get_current_time_in_timezone():
     """Returns the current time in the configured timezone."""
-    utc_now = datetime.utcnow().replace(tzinfo=pytz.utc)
+    # Use datetime.now(UTC) to avoid DeprecationWarning
+    utc_now = datetime.now(UTC)
     return utc_now.astimezone(TIMEZONE)
 
 def check_session_status():
