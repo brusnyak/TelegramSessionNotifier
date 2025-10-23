@@ -1,0 +1,55 @@
+# Core Data Handling and Analysis
+pandas==2.3.3
+numpy==2.2.6
+yfinance==0.2.66
+TA-Lib==0.6.8
+
+# Timezone Management
+pytz==2025.2
+tzdata==2025.2
+
+# Environment Variables
+python-dotenv==1.1.1
+
+# HTTP Requests
+requests==2.32.5
+httpx==0.28.1
+httpcore==1.0.9
+h11==0.16.0
+idna==3.11
+charset-normalizer==3.4.4
+urllib3==2.5.0
+certifi==2025.10.5
+
+# Telegram Bot API
+python-telegram-bot==22.5
+
+# Scheduling
+schedule==1.2.2
+multitasking==0.0.12
+
+# Web Scraping (if needed)
+beautifulsoup4==4.14.2
+soupsieve==2.8
+curl_cffi==0.13.0
+
+# Build and Packaging
+build==1.3.0
+pyproject_hooks==1.2.0
+packaging==25.0
+tomli==2.3.0
+
+# Other Utilities
+anyio==4.11.0
+exceptiongroup==1.3.0
+frozendict==2.4.6
+peewee==3.18.2
+platformdirs==4.5.0
+protobuf==6.33.0
+pycparser==2.23
+python-dateutil==2.9.0.post0
+six==1.17.0
+sniffio==1.3.1
+typing_extensions==4.15.0
+websockets==15.0.1
+cffi==2.0.0
