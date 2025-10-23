@@ -64,7 +64,7 @@ def send_telegram_message(message):
 
 def get_current_time_in_timezone():
     """Returns the current time in the configured timezone."""
-    utc_now = datetime.utcnow().replace(tzinfo=pytz.utc)
+    utc_now = datetime.now(datetime.UTC)
     return utc_now.astimezone(TIMEZONE)
 
 def check_session_status():
